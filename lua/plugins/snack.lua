@@ -7,7 +7,32 @@ return {
     -- or leave it empty to use the default settings
     -- refer to the configuration section below
     bigfile = { enabled = true },
-    dashboard = { enabled = true },
+    dashboard = {
+      enabled = true,
+      preset = {
+        header = [[
+██████╗  ███████╗ ██╗   ██╗ ██╗   ██╗ ████████╗ ███████╗ ██╗   ██╗
+██╔══██╗ ██╔════╝ ██║   ██║ ██║   ██║ ╚══██╔══╝ ██╔════╝ ██║   ██║
+██║  ██║ █████╗   ██║   ██║ ██║   ██║    ██║    ███████╗ ██║   ██║
+██║  ██║ ██╔══╝   ╚██╗ ██╔╝ ██║   ██║    ██║    ╚════██║ ██║   ██║
+██████╔╝ ███████╗  ╚████╔╝  ╚██████╔╝    ██║    ███████║ ╚██████╔╝
+╚═════╝  ╚══════╝   ╚═══╝    ╚═════╝     ╚═╝    ╚══════╝  ╚═════╝ 
+                                                                  
+        ██╗  ██╗  █████╗  ██╗ ███████╗ ███████╗ ███╗   ██╗        
+        ██║ ██╔╝ ██╔══██╗ ██║ ██╔════╝ ██╔════╝ ████╗  ██║        
+        █████╔╝  ███████║ ██║ ███████╗ █████╗   ██╔██╗ ██║        
+        ██╔═██╗  ██╔══██║ ██║ ╚════██║ ██╔══╝   ██║╚██╗██║        
+        ██║  ██╗ ██║  ██║ ██║ ███████║ ███████╗ ██║ ╚████║        
+        ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝ ╚══════╝ ╚══════╝ ╚═╝  ╚═══╝        
+                                                                  
+   (⌐■_■)                                          (ﾉ◕ヮ◕)ﾉ        
+   the geekest dev of all time    ⚔    the geekest dev of today   
+   wrote the kernel in ed              has 400 neovim plugins     
+                                                                  
+              "would you lose?"                                   
+                           "nah, i'd :wq!"                        ]],
+      },
+    },
     explorer = { enabled = true },
     indent = { enabled = true },
     input = { enabled = true },

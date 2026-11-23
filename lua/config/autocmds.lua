@@ -8,6 +8,18 @@
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 --
 
+vim.api.nvim_create_autocmd("FileType", {
+  group = vim.api.nvim_create_augroup("ruby_legacy_syntax_indent", { clear = true }),
+  pattern = { "ruby", "eruby" },
+  callback = function(ev)
+    vim.schedule(function()
+      if vim.api.nvim_buf_is_valid(ev.buf) then
+        vim.bo[ev.buf].syntax = vim.bo[ev.buf].filetype
+      end
+    end)
+  end,
+})
+
 if vim.g.neovide then
   -- Set your preferred font name and size (e.g., size 16)
   vim.o.guifont = "JetBrainsMono Nerd Font:h16"
